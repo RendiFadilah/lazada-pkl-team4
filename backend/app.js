@@ -5,12 +5,10 @@ var cookieParser = require("cookie-parser");
 var session = require("express-session");
 var logger = require("morgan");
 var cors = require("cors");
-var indexRouter = require("./routes/landingpage");
+var indexRouter = require("./routes/products");
 var detailRouter = require("./routes/itemdetail")
 var usersRouter = require("./routes/login");
-// var itemRouter = require("./routes/itemdetails");
-// var landingRouter = require("./routes/landingpage");
-// var sellerProductRouter = require("./routes/sellerproducts");
+
 
 var app = express();
 
@@ -55,12 +53,7 @@ const auth = function (req, res, next) {
 
 app.use("/", indexRouter);
 app.use("/detail", indexRouter);
-// app.use("/sellers", sellerProductRouter);
-// app.use("/", landingRouter);
-// app.use("/", itemRouter);
 app.use("/", usersRouter);
-// app.use("/posts", auth, postsRouter);
-// catch 404 and forward to error handler
 app.use(function (req, res, next) {
 	next(createError(404));
 });
@@ -75,5 +68,7 @@ app.use(function (err, req, res, next) {
 	res.status(err.status || 500);
 	res.render("error");
 });
+
+app.listen(3001, () => console.log(`App listening at http://localhost:3001`))
 
 module.exports = app;

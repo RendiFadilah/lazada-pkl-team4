@@ -207,6 +207,7 @@ header{
 
     .sale-now.flash-title{
         font-size: 14px;
+        align-items: center;
     }
 
    
@@ -227,6 +228,9 @@ header{
     }
 
   
+    .wrapper-timer{
+        align-items: center;
+    }
     .item-timer{
         background-color: #DA2919;
         color: #ffffff;
@@ -235,7 +239,7 @@ header{
         margin: 8px;
         border-radius: 4px;
         margin-left: 2px;
-        align-self: center;
+
         padding: 10px;
     }
 

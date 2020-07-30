@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../elements/Button/index"
 
 export default function HanyaUntukMu({ data, props }) {
   return (
@@ -9,7 +10,10 @@ export default function HanyaUntukMu({ data, props }) {
           return (
             <div className="col mb-2">
               <div className="card shadow" stlye={{ width: "100rem"}}>
-                <img src={item.imageUrl} alt="" />
+                <Button type="link" href="/details">
+                    <img src={item.imageUrl} alt="" />
+
+                </Button>
                 <div className="card-body">
                   <div className="card-title">{item.name}</div>
                   <div className="card-text price">{item.price}</div>

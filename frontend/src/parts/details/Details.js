@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../../elements/Button/index";
-import Gambar from "../../assets/images/img-hanyauntukmu1.webp";
 import Rating from "../../assets/images/ic_star.png";
 import IconLokasi from "../../assets/images/location.png";
 import IconPengiriman from "../../assets/images/send.png";
@@ -9,9 +8,23 @@ import IconVerified from "../../assets/images/ic_verified.png";
 import IconBlock from "../../assets/images/block.png";
 import Barcode from "../../assets/images/barcode.png";
 import LazadaLogo from "../../assets/images/lazada-logo.png";
+import axios from "axios";
 
-export default function Details() {
+
+export default function Details(props) {
+
+  const [itemDetails, setItemDetails] = useState([]);
+
+  useEffect(()=>{
+    let urlId = props.match.params.id;
+    axios.get(`http://localhost:3001/v1/api/lazada/dp/${urlId}`).then((response)=>{
+     setItemDetails(response.data)
+    })
+  })
+
+
   return (
+    
     <>
       <div className="container">
         <div className="row">
@@ -49,8 +62,8 @@ export default function Details() {
                   className="breadcrumb-item mx-2 align-self-center active"
                   style={{ fontSize: 14 }}
                 >
-                  INBEX Headphone Splitter/Male to 2 Female /3.5mm Headphone
-                  Audio Splitter/ for headset PC Adapter
+                  {itemDetails.name}
+            
                 </li>
               </Button>
             </ol>
@@ -62,14 +75,13 @@ export default function Details() {
         <div className="wrapper-details">
           <div className="row">
             <div className="col-4 p-3">
-              <img src={Gambar} style={{ width: 350 }} alt="" />
+              <img src={itemDetails.image} style={{ width: 350 }} alt="" />
             </div>
             <div className="col-5 p-3">
               <span
                 style={{ fontFamily: "", fontWeight: "bold", fontSize: 16 }}
               >
-                INBEX Headphone Splitter/Male to 2 <br></br> Female /3.5mm
-                Headphone Audio Splitter/ for <br></br> headset PC Adapter
+                   {itemDetails.name}
               </span>
 
               <div className="rating mt-3">
@@ -79,7 +91,7 @@ export default function Details() {
                   className="ml-2"
                   style={{ fontSize: 12, color: "#3595BE" }}
                 >
-                  82 Penilaian
+                  {itemDetails.rating} Penilaian
                 </Button>
 
                 <span style={{ color: "#B4B4B4" }}> | </span>
@@ -104,7 +116,7 @@ export default function Details() {
                 >
                   Merek:{" "}
                   <Button type="link" style={{ color: "#3595BE" }}>
-                    INBEX
+                    {itemDetails.brand}
                   </Button>
                 </span>
 
@@ -125,7 +137,7 @@ export default function Details() {
                     color: "#F37323",
                   }}
                 >
-                  Rp19.900
+                  {itemDetails.price}
                 </span>
                 <div className="sale">
                   <span
@@ -135,10 +147,10 @@ export default function Details() {
                       textDecoration: "line-through",
                     }}
                   >
-                    Rp70.000
+                    {itemDetails.sale}
                   </span>
                   <span style={{ fontSize: 14 }} className="ml-1">
-                    -72%
+                    {itemDetails.discount}
                   </span>
                 </div>
               </div>

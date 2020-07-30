@@ -6,7 +6,7 @@ import LazadaCredit from "../../assets/images/lazada-credit.png";
 export default function Navbar() {
     return (
         <header className="spacing-sm header-nav-logo">
-            <img className="logo" alt="Logo" src={LogoLazada} style={{ width: 200}} />
+            <img className="logo" alt="Logo" src={LogoLazada}  style={{ width: 200}} />
 
             <div className="wrapper">
             <div className="wrap">

@@ -9,8 +9,7 @@ export default function FlashSale({ props }) {
   const [flashSale, setFlashSale] = useState([]);
 
   const fetchFlashSale = () => {
-    Axios.get("http://localhost:3000/v1/api/lazada").then((response) => {
-      console.log(response);
+    Axios.get("http://localhost:3001/v1/api/lazada").then((response) => {
       setFlashSale(response.data);
     });
   };
@@ -26,6 +25,8 @@ export default function FlashSale({ props }) {
           <h4 className="mb-3">Flash Sale</h4>
           <main className="bg-white">
             <div className="content p-3">
+              <div className="wrapper-timer">
+
               <span className="sale-now">Dijual Sekarang</span>
 
               <span className="flash-title text-black ml-3">
@@ -36,7 +37,7 @@ export default function FlashSale({ props }) {
                 initialTime={60000 * 30 * 24 + 6000}
                 lastUnit="h"
                 direction="backward"
-              >
+                >
                 <span className="item-timer">
                   <Timer.Minutes />
                 </span>
@@ -56,6 +57,7 @@ export default function FlashSale({ props }) {
                 </Link>
               </span>
             </div>
+                </div>
 
             <hr />
 
@@ -66,12 +68,12 @@ export default function FlashSale({ props }) {
                     <Button
                       className="text-decoration-none text-dark"
                       type="link"
-                      href={`/detailitem/${item._id}`}
+                      href={`/detail/${item.id}`}
                     >
                       <div className="card-group" style={{ width: "100%" }}>
                         <div className="card border-0">
                           <img
-                            src={item.imageUrl}
+                            src={item.image}
                             className="card-img-top"
                             alt="..."
                           />

@@ -75,74 +75,6 @@
     "koleksiTerbaik" : [
       {
         "id": "assds123",
-<<<<<<< HEAD
-
-        "name": "caca",
-        "stock": "97",
-        "imageUrl1": "/images/img-koleksiterbaik.webp",
-        "imageUrl2": "/images/img-koleksiterbaik2.webp",
-        "imageUrl3": "/images/img-koleksiterbaik3.webp"
-      },
-      {
-        "id": "assds123",
-        "name": "caca",
-        "stock": "97",
-        "imageUrl1": "/images/img-koleksiterbaik.webp",
-        "imageUrl2": "/images/img-koleksiterbaik2.webp",
-        "imageUrl3": "/images/img-koleksiterbaik3.webp"
-      },
-      {
-        "id": "assds123",
-        "name": "caca",
-        "stock": "97",
-        "imageUrl1": "/images/img-koleksiterbaik.webp",
-        "imageUrl2": "/images/img-koleksiterbaik2.webp",
-        "imageUrl3": "/images/img-koleksiterbaik3.webp"
-      },
-      {
-        "id": "assds123",
-        "name": "caca",
-        "stock": "97",
-        "imageUrl1": "/images/img-koleksiterbaik.webp",
-        "imageUrl2": "/images/img-koleksiterbaik2.webp",
-        "imageUrl3": "/images/img-koleksiterbaik3.webp"
-      },
-      {
-        "id": "assds123",
-        "name": "caca",
-        "stock": "97",
-        "imageUrl1": "/images/img-koleksiterbaik.webp",
-        "imageUrl2": "/images/img-koleksiterbaik2.webp",
-        "imageUrl3": "/images/img-koleksiterbaik3.webp"
-      },
-      {
-        "id": "assds123",
-        "name": "caca",
-        "stock": "97",
-        "imageUrl1": "/images/img-koleksiterbaik.webp",
-        "imageUrl2": "/images/img-koleksiterbaik2.webp",
-        "imageUrl3": "/images/img-koleksiterbaik3.webp"
-      },
-      {
-        "id": "assds123",
-        "name": "caca",
-        "stock": "97",
-        "imageUrl1": "/images/img-koleksiterbaik.webp",
-        "imageUrl2": "/images/img-koleksiterbaik2.webp",
-        "imageUrl3": "/images/img-koleksiterbaik3.webp"
-      },
-      {
-        "id": "assds123",
-        "name": "caca",
-        "stock": "97",
-        "imageUrl1": "/images/img-koleksiterbaik.webp",
-        "imageUrl2": "/images/img-koleksiterbaik2.webp",
-        "imageUrl3": "/images/img-koleksiterbaik3.webp"
-      }
-    ]
-  }
-
-=======
         "name": "kuasMakeupFavorit",
         "stock": "165",
         "imageUrl1": "/images/img-kuas.webp",
@@ -165,7 +97,7 @@
         "stock": "97",
         "imageUrl1": "/images/img-beating1.webp",
         "imageUrl2": "/images/img-beating2.webp",
-        "imageUrl3": "/images/img-beating3.jpeg"
+        "imageUrl3": "/images/img-ayeshadowCoklat.webp"  
       },
       {
       
@@ -192,7 +124,8 @@
           "stock": "5,655",
           "imageUrl1": "/images/img-dekor1.webp",
           "imageUrl2": "/images/img-dekor2.webp",
-          "imageUrl3": "/images/img-dekor3.jpeg"
+          "imageUrl3": "/images/img-ayeshadowCoklat.webp"  
+          
         },
         {
       
@@ -200,8 +133,8 @@
           "name": "siselaluTampilKece",
           "stock": "240",
           "imageUrl1": "/images/img-kece1.webp",
-          "imageUrl2": "/images/img-kece2.jpeg",
-          "imageUrl3": "/images/img-kece3.jpeg"
+          "imageUrl2": "/images/img-bebas2.webp",
+          "imageUrl3": "/images/img-bebas3.webp"
         },
         {
       
@@ -443,27 +376,7 @@
           "discount": "-65%",
           "rating": "/images/ic_star.png",
           "stock": "969"
-        },
-        {
-          "id": "hanyauntukmu2",
-          "imageUrl": "/images/img-hanyauntukmu2.webp",
-          "name": "(BISA COD) PALING MURAH! Rok Plikset Premium",
-          "price": "Rp 15.900",
-          "sale": "Rp 45.000",
-          "discount": "-65%",
-          "rating": "/images/ic_star.png",
-          "stock": "969"
-        },
-        {
-          "id": "hanyauntukmu2",
-          "imageUrl": "/images/img-hanyauntukmu2.webp",
-          "name": "(BISA COD) PALING MURAH! Rok Plikset Premium",
-          "price": "Rp 15.900",
-          "sale": "Rp 45.000",
-          "discount": "-65%",
-          "rating": "/images/ic_star.png",
-          "stock": "969"
         }
+     
       ]
   }
->>>>>>> d84bc7e95729f9f13346a709136ff23ab1d41d7a

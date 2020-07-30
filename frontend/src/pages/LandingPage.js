@@ -9,7 +9,7 @@ import Category from "../parts/Category";
 import HanyaUntukMu from "../parts/HanyaUntukMu"
 
 import DataLanding from '../json/landingPage.json';
-import Footer from "../parts/footer/Footer";
+import Footer from "../parts/Footer";
 
 export default class LandingPage extends Component {
     
@@ -20,17 +20,12 @@ export default class LandingPage extends Component {
                 <NavbarLazada {...this.props}></NavbarLazada>
                 <Hero data={DataLanding.lazadaFeatured}  {...this.props}></Hero>
                 <FlashSale data={DataLanding.flashSale} {...this.props}></FlashSale>
-<<<<<<< HEAD
-                <KoleksiTerbaik data={DataLanding.KoleksiTerbaik} {... this.props}></KoleksiTerbaik>
-                <Footer {...this.props}></Footer>
-=======
                 <KoleksiTerbaik data={DataLanding.koleksiTerbaik} {...this.props}></KoleksiTerbaik>
                 <LazMall data={DataLanding.lazMall} {...this.props}></LazMall>
                 <Category data={DataLanding.Category} {...this.props}></Category>
                 <HanyaUntukMu data={DataLanding.HanyaUntukMu} {...this.props}></HanyaUntukMu>
-          
+                <Footer {...this.props}></Footer>
 
->>>>>>> d84bc7e95729f9f13346a709136ff23ab1d41d7a
             </>
         );
     }
